@@ -4,7 +4,7 @@ payload_dumper="https://github.com/ssut/payload-dumper-go/releases/download/1.3.
 wget -O pdg.tgz $payload_dumper
 tar xf pdg.tgz payload-dumper-go
 rm pdg.tgz
-for device in barbet bluejay lynx akita; do
+for device in barbet; do
         rm -rf $device || true
         mkdir $device
         pushd $device
